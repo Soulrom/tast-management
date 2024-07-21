@@ -11,6 +11,7 @@
 ```bash
 git clone https://github.com/ваш-користувач/task-management.git
 cd task-management
+```
 
 ### Налаштування середовища
 
@@ -18,6 +19,7 @@ cd task-management
 
 ```bash
 ./gradlew build
+```
 
 ### Запуск програми
 
@@ -25,6 +27,7 @@ cd task-management
 
 ```bash
 ./gradlew bootRun
+```
 
 Після успішного запуску програма буде доступна за адресою http://localhost:8081.
 
@@ -40,16 +43,19 @@ Content-Type: application/json
   "title": "Ваш заголовок",
   "content": "Ваш зміст"
 }
+```
 
 ### Перегляд всіх постів
 
 ```http
 GET /posts
+```
 
 ### Перегляд конкретного поста
 
 ```http
 GET /posts/{id}
+```
 
 ### Оновлення поста
 
@@ -61,11 +67,13 @@ Content-Type: application/json
   "title": "Оновлений заголовок",
   "content": "Оновлений зміст"
 }
+```
 
 ### Видалення поста
 
 ```http
 DELETE /posts/{id}
+```
 
 ## Сутності
 
